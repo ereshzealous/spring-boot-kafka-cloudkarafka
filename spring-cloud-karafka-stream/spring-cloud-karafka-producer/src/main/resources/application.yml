@@ -31,7 +31,7 @@ spring:
     stream:
       kafka:
         binder:
-          brokers: tricycle-01.srvs.cloudkafka.com:9094, tricycle-02.srvs.cloudkafka.com:9094, tricycle-03.srvs.cloudkafka.com:9094
+          brokers: <BROKER>-01.srvs.cloudkafka.com:9094, <BROKER>-02.srvs.cloudkafka.com:9094, <BROKER>-03.srvs.cloudkafka.com:9094
           auto-create-topics: false
           configuration:
             security:
