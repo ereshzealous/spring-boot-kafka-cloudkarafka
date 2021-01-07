@@ -1,0 +1,16 @@
+package com.karafka.spring.cloud.stream.domain;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+/**
+ * Created on 06/January/2021 By Author Eresh, Gorantla
+ **/
+@Data
+public class Event {
+	private String id;
+	private String event;
+	private String userName;
+	private String data;
+}

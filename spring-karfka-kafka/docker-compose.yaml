@@ -1,0 +1,16 @@
+version: '3'
+services:
+  producer:
+    build: ./spring-karafka-kafka-producer
+    image: eresh.gorantla/spring-karafka-kafka-producer
+    environment:
+      - CLOUDKARAFKA_USERNAME=5trynmsk
+      - CLOUDKARAFKA_PASSWORD=CEVvPs9tDk1j1FdfGVeATI1IrZSLHuJt
+      - SPRING_PROFILES_ACTIVE=cloudkarafka
+  consumer:
+    build: ./spring-karafka-kafka-consumer
+    image: eresh.gorantla/spring-karafka-kafka-consumer
+    environment:
+      - CLOUDKARAFKA_USERNAME=5trynmsk
+      - CLOUDKARAFKA_PASSWORD=CEVvPs9tDk1j1FdfGVeATI1IrZSLHuJt
+      - SPRING_PROFILES_ACTIVE=cloudkarafka
