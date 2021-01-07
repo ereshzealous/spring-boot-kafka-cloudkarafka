@@ -23,7 +23,7 @@ spring:
   config:
     activate.on-profile: cloudkarafka
   kafka:
-    bootstrap-servers: tricycle-01.srvs.cloudkafka.com:9094, tricycle-02.srvs.cloudkafka.com:9094, tricycle-03.srvs.cloudkafka.com:9094
+    bootstrap-servers: <BROKER>-01.srvs.cloudkafka.com:9094, <BROKER>-02.srvs.cloudkafka.com:9094, <BROKER>-03.srvs.cloudkafka.com:9094
     consumer:
       topic: ${CLOUDKARAFKA_USERNAME}-default
     properties:
